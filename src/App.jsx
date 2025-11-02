@@ -23,6 +23,7 @@ import ContactSection from './sections/ContactSection.jsx'
 import FooterSection from './sections/FooterSection.jsx'
 import AdminDashboard from './pages/AdminDashboard.jsx'
 import logo from './assets/logo.png'
+import DCGF from '/DCGF.mp4'
 
 function PageTransition({ children }) {
   return (
@@ -89,7 +90,7 @@ export default function App() {
       <>
         {/* 🎥 Background Video */}
         <video autoPlay loop muted playsInline className="background-video">
-          <source src="/DCGF.mp4" type="video/mp4" />
+          <source src={DCGF} type="video/mp4" />
         </video>
 
         {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
